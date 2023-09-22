@@ -14,7 +14,7 @@ const tweetNow=()=>{
 const getnewQuotes=()=>{
     let rnum=Math.floor(Math.random()*10);
     rd=realdata[rnum];
-    quo.innerText=`${rd.text}`;
+    quo.innerText=`"${rd.text}"`;
     if(rd.author==null){
         auth.innerText="UNKNOWN";
     }
